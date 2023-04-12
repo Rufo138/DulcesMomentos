@@ -1,0 +1,9 @@
+/* INFOPRODUCTO */
+.infoproducto figure.visor img {
+    display: none;
+    cursor: crosshair;
+}
+
+.infoproducto figure.visor img:first-child {
+    display: block;
+}

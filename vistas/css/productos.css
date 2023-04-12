@@ -1,0 +1,472 @@
+/*=============================================
+SCROLL BAR
+=============================================*/
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #ff66c4;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    border-radius: 0px;
+    background-color: #000000;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #ff66c4;
+    background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1) 50%, transparent, transparent)
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+
+/*=============================================
+BANNER PARALLAX
+=============================================*/
+
+.bgImage {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgImage {
+    background-image: url("http://localhost/backend/vistas/img/banner/default.jpg");
+    width: 0%;
+    height: 200px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner .textoBanner {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner .textoDer {
+    top: 50px;
+    right: 50px;
+    text-align: right;
+}
+
+.banner .textoIzq {
+    top: 50px;
+    left: 50px;
+    text-align: left;
+}
+
+.banner .textoCent {
+    top: 50px;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    text-align: center;
+}
+
+.textoBanner h1 {
+    font-size: 35px;
+    line-height: 25px;
+}
+
+.textoBanner h2 {
+    font-size: 30px;
+    line-height: 25px;
+}
+
+.textoBanner h3 {
+    font-size: 24px;
+    line-height: 25px;
+}
+
+/*=============================================
+BARRA PRODUCTOS
+=============================================*/
+.barraProductos {
+    background: #000000;
+    margin-bottom: 0px;
+    background-color: #000;
+}
+
+.barraProductos .organizarProductos span {
+    margin-left: 5px;
+}
+
+/*=============================================
+VITRINA PRODUCTOS CUADRICULA
+=============================================*/
+.tituloDestacado h1 {
+    margin-top: 0px;
+}
+
+.tituloDestacado button span {
+    margin-left: 5px;
+}
+
+.productos {
+    background: #000;
+}
+
+.productos ul li figure {
+    overflow: hidden;
+}
+
+.productos ul li a img:hover {
+    transition: .3s all ease;
+    opacity: .8;
+    transform: scale(1.1, 1.1);
+}
+
+.productos ul li h4 small {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.productos ul li h4 small a {
+    color: #777;
+}
+
+.productos ul li h2 {
+    margin-top: 0px;
+    font-size: 22px;
+}
+
+.pixelProducto {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.pixelProducto {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.precio {
+    padding: 0;
+    margin-top: -2px;
+    padding-bottom: 0px;
+}
+
+.enlaces {
+    padding: 0;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.enlaces button {
+    margin: 2px;
+}
+
+.enlaces button i {
+    color: #999;
+    font-size: 12px;
+}
+
+.btnGrid {
+    display: none;
+}
+
+/*=============================================
+VITRINA PRODUCTOS LISTA
+=============================================*/
+.text-muted {
+    padding-top: 10px;
+}
+
+.tituloDestacado {
+    color: #000;
+    border-top: 3px solid black;
+}
+
+.tituloDestacado button {
+    margin-top: 8px;
+}
+
+
+.oferta {
+    text-decoration: line-through;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.fontSize {
+    font-size: 11px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.enlaces {
+    text-align: center;
+    margin-top: 0px;
+}
+
+/*=============================================
+MOVIL (LG revisamos en 1440px)
+=============================================*/
+@media (min-width:1440px) {
+    .productos ul li h1 small {
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+        top: 50%;
+    }
+
+    .productos ul li h2 strong small {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .parrafo {
+        font-size: 20px;
+
+    }
+
+    .enlaces {
+        text-align: center;
+        margin-top: 10px
+    }
+
+    .precio h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .banner {
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+    }
+
+}
+
+/*=============================================
+MOVIL (LG revisamos en 1200px)
+=============================================*/
+@media (min-width:1200px) {
+    .banner {
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .productos ul li h1 {
+        margin-top: 0px;
+    }
+
+    .productos ul li h1 small {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+        top: 50%;
+    }
+
+    .productos ul li h2 strong small {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .enlaces {
+        padding: 0;
+        padding-bottom: 0px;
+        margin: 0px;
+    }
+
+    .precio h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+
+
+}
+
+/*=============================================
+TABLET (revisamos en 992px hasta 1199px)
+============================================*/
+@media (max-width:1199px) and (min-width:992px) {
+    .banner {
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .productos ul li h1 small {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 500;
+        top: 50%;
+    }
+
+    .productos ul li h2 strong small {
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .enlaces {
+        padding: 0;
+        padding-bottom: 0px;
+        margin: 0px;
+    }
+
+    .precio h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+
+
+
+
+}
+
+/*=============================================
+TABLET (revisamos en 768px hasta 991px)
+============================================*/
+@media (max-width:991px) and (min-width:768px) {
+    .precio h2 {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .enlaces {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .banner {
+        position: relative;
+        overflow: hidden;
+        height: 180px;
+    }
+
+    .textoBanner h1 {
+        font-size: 30px;
+        line-height: 15px;
+    }
+
+    .textoBanner h2 {
+        font-size: 25px;
+        line-height: 15px;
+    }
+
+    .textoBanner h3 {
+        font-size: 25px;
+        line-height: 15px;
+    }
+
+    .banner .textoDer, .banner .textoIzq {
+        top: 35px;
+    }
+}
+
+
+/*=============================================
+MOVIL (XS revisamos en 767px)
+=============================================*/
+
+@media (max-width:767px) {
+    .precio h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .enlaces {
+        text-align: center;
+    }
+
+    /* .nombre{
+        text-align: center;
+        font-size: 40px!important;
+    }
+    .precio h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    .enlaces{
+        text-align: center;
+    } */
+
+    .banner {
+        position: relative;
+        overflow: hidden;
+        height: 90px;
+        min-height: 100px;
+    }
+
+    .banner .textoDer, .banner .textoIzq, .banner .textoCent {
+        top: 30px;
+        left: 50%;
+        width: 800px;
+        margin-left: -400px;
+        text-align: center;
+        text-shadow: 3px 3px 23px black;
+    }
+
+    .tituloDestacado h1 {
+        text-align: center;
+    }
+
+    .tituloDestacado button {
+        position: absolute;
+        left: 50%;
+        width: 40%;
+        margin-left: -20%;
+    }
+
+    .textoBanner h1 {
+        font-size: 20px;
+        line-height: 5px;
+    }
+
+    .textoBanner h2 {
+        font-size: 15px;
+        line-height: 5px;
+    }
+
+    .textoBanner h3 {
+        font-size: 14px;
+        line-height: 5px;
+    }
+
+    .bgImage {
+        height: 150px;
+    }
+
+    .productos ul li h1 small {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .centrar img {
+        position: relative;
+        left: 50%;
+        width: 60%;
+        margin-left: -30%;
+    }
+
+}

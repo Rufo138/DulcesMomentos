@@ -1,0 +1,260 @@
+/*=============================================
+=            Global            =
+=============================================*/
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+	margin: 0px;
+}
+
+ul, ol {
+	padding: 0px;
+}
+
+a:visited, a:link, a:focus, a:active {
+	list-style: none;
+	text-decoration: none;
+}
+
+/*.barraSuperior {
+	background: #da0a03;
+}*/
+
+.barraSuperior a {
+	color: #ffffff;
+}
+
+.barraSuperior a:hover {
+	color: black;
+}
+
+/*
+.backColor, .backColor a {
+	background: #da0a03;
+	color: #ffffff;
+}*/
+
+.fondoBreadcrumb {
+	margin-bottom: 0px;
+	background: rgba(0, 0, 0, 0);
+}
+
+/*=============================================
+=            REDES SOCIALES           =
+=============================================*/
+.redSocial {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 30%;
+}
+
+
+/*FACEBOOK*/
+.facebookBlanco {
+	color: white;
+}
+
+.facebookNegro {
+	color: black;
+}
+
+.facebookColor {
+	color: white;
+	background: #46639f;
+}
+
+.facebookColor:hover {
+	background: white;
+	color: #46639f;
+}
+
+/*YOUTUBE*/
+
+.youtubeBlanco {
+	color: red;
+	background: #fff;
+}
+
+.youtubeNegro {
+	color: black;
+}
+
+.youtubeColor {
+	background: white;
+	color: #FF0000;
+}
+
+.youtubeColor:hover {
+	background: #FF0000;
+	color: white;
+}
+
+/*TWITTER*/
+
+.twitterColor {
+	color: white;
+	background: #0ab2e6;
+}
+
+.twitterBlanco {
+	color: white;
+}
+
+.twitterNegro {
+	color: black;
+}
+
+.twitterColor:hover {
+	color: #0ab2e6;
+	background: #ffffff;
+}
+
+/*GOOGLE PLUS*/
+
+.googleColor {
+	color: white;
+	background: #d71617;
+}
+
+.googleBlanco {
+	color: white;
+}
+
+.googleNegro {
+	color: black;
+}
+
+.googleColor:hover {
+	color: #d71617;
+	background: white;
+}
+
+
+/*INSTAGRAM*/
+
+.instagramBlanco {
+	color: white;
+}
+
+.instagramNegro {
+	color: black;
+}
+
+.instagramColor {
+	color: white;
+	background: radial-gradient(circle at 33% 100%,
+			#fed373 4%,
+			#f15245 30%,
+			#d92e7f 62%,
+			#9b36b7 85%,
+			#515ecf);
+}
+
+.instagramColor:hover {
+	background: radial-gradient(circle at 33% 100%,
+			#515ecf 4%,
+			#fed373 30%,
+			#f15245 62%,
+			#d92e7f 85%,
+			#9b36b7);
+}
+
+/*=============================================
+ERROR 404
+=============================================*/
+
+.error404 {
+	color: rgb(201, 42, 42);
+	margin-bottom: 20px;
+}
+
+.error404 h1 {
+	margin-top: 0px;
+}
+
+/*=============================================
+SCROLL UP
+=============================================*/
+#scrollUp {
+	bottom: 20px;
+	right: 10px;
+	width: 25px;
+	height: 25px;
+	background: url(../img/plantilla/flecha.jpg);
+}
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width:1200px) {
+
+	.col-lg-0 {
+		display: none;
+	}
+
+	.error404 h1 {
+		font-size: 300px;
+		text-shadow: 8px 8px 1px #dadada;
+	}
+
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px) {
+
+	.col-md-0 {
+		display: none;
+	}
+
+	.error404 h1 {
+		font-size: 200px;
+		text-shadow: 6px 6px 1px #dadada;
+	}
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px) {
+
+	.col-sm-0 {
+		display: none;
+	}
+
+	.error404 h1 {
+		font-size: 150px;
+		text-shadow: 4px 4px 1px #dadada;
+	}
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px) {
+
+	.col-xs-0 {
+		display: none;
+	}
+
+	.error404 h1 {
+		font-size: 75px;
+		text-shadow: 2px 2px 1px #dadada;
+	}
+
+}
